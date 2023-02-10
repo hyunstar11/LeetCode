@@ -4,4 +4,4 @@ class Solution:
         for i in range(0, len(accounts)):  
             su = sum(accounts[i])
             sums.append(su)
-        return max(sums)
+        return max(sums)  #test
