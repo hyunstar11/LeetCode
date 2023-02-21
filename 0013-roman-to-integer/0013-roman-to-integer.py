@@ -1,6 +1,6 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
-        # 7개 알파벳에 대해 신언
+        # 7개 알파벳에 대해 선언
         roman_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}  
         
         # 계산된 값을 위한 변수를 선언 
