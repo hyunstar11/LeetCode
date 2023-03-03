@@ -4,4 +4,4 @@ class Solution:
         for i in range(0, len(accounts)):  # account의 길이 만큼 반복 
             su = sum(accounts[i]) # 각 어카운트의 합을 구함
             sums.append(su) # 각 합을 sums 에 추가해줌
-        return max(sums)  # sums 에 있는 것 중 가장 큰 값을 찾기 
+        return max(sums)  # sums 에 있는 것 중 가장 큰 값을 찾기 ##
