@@ -3,11 +3,14 @@
 class Solution:
     def mySqrt(self, n: int) -> int:
 
-        if n < 0:
-            return "Invalid input. Please enter a non-negative number."
+        # check if the given number is negative ; 음수면 sqrt 를 구할 수 가 없음 
+        if n < 0 : 
+            return False 
+        # 0 이나 1인 경우에는 sqrt 가 정해져 있음. 
         if n == 0 or n == 1:
             return n
-
+        
+        # initialize two vars: 'start' and 'end'
         start = 0
         end = n
         sqrt = 0
@@ -24,27 +27,11 @@ class Solution:
                 end = mid - 1
 
         return sqrt
-#         # check if the given number is negative 
-#         if x < 0 : 
-#             return False 
         
-#         # initialize two vars: 'low' and 'high'
-#         low = 0 
-#         high = x 
-#         sqrt = 0 
-        
-#         # how to define a precision threshold? 
-#         # precision_threshold = 1e-6
-        
-#         while low <= high:
-#             mid = (low + high)/2 
-#             sq_mid = mid * mid 
-            
-#             if mid * mid == x: 
-#                 return sq_mid
-#             elif mid*mid < x: 
-#                 low = mid + 1  
-#                 sq_mid = mid
-#             else:
-#                 end = mid - 1 
-#         return sqrt
+#         if n < 0:
+#             return "Invalid input. Please enter a non-negative number."
+#         if n == 0 or n == 1:
+#             return n
+
+
+
