@@ -21,6 +21,7 @@ class Solution:
             if mid * mid == n:
                 return mid
             elif mid * mid < n:
+                # 가장 작은 integer 인 1 단위로 업데이트.. 밑에도 동일함
                 start = mid + 1
                 sqrt = mid
             else:
