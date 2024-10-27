@@ -1,14 +1,10 @@
-class Solution(object):
-    def maxProfit(self, prices):
-        """
-        :type prices: List[int]
-        :rtype: int
-        """
-        maximum = 0 
-        lowprice = 99999
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        maxprofit = 0 
+        lowestprice = 999999 
         for price in prices: 
-            if price < lowprice: 
-                lowprice = price 
-            elif price - lowprice > maximum: 
-                maximum = price - lowprice 
-        return maximum
+            if price < lowestprice: 
+                lowestprice = price 
+            elif price - lowestprice > maxprofit: 
+                maxprofit = price - lowestprice 
+        return maxprofit 
